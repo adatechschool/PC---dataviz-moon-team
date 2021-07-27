@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXO Indviduel 2</title>
+</head>
+<body>
+
+
+<h6>level 1</h6>
+<p id="text"></p>
+<hr>
+<h6>Level 2</h6>
+<p id="myPara"></p>
+<hr>
+<h6>Level 3</h6>
+<p id="myPara2"></p>
+<hr>
+    <script>
+        // Niveau 1 ---------------------------------------------------
+
+        text = document.getElementById('text');
+        
+        p = new XMLHttpRequest();
+        p.open("GET", "text.txt");
+        p.send();
+        
+        p.onreadystatechange = function() {
+            if (p.readyState == 4)                
+                text.innerHTML = p.responseText; 
+                                                   
+        }
+
+        // Niveau 2 ---------------------------------------------------
+
+fetch("./json.json")
+.then(function(resp){
+    return resp.json();
+})
+.then(function(data){
+
+    document.getElementById('myPara').innerHTML = data.species + "<br>" + data.breed + " <br>" + data.age + "<br>" + data.traits.eyeColor + "<br> " + data.traits.coatColor + " <br>" + data.traits.weight ;
+
+})
+
+        //Niveau 3 ---------------------------------------------------
+
+fetch("./json2.json")
+.then(function(resp){
+    return resp.json();
+})
+.then(function(data){
+
+document.getElementById('myPara2').innerHTML = data.students[0].id + " " +  data.students[0].name + " " + data.students[0].lastname + " " + data.students[0].spe + " "  + data.students[0].grade.average + " "+ " " + "<br>" + data.students[1].id + " " +   data.students[1].name + " " + data.students[1].lastname + " " + data.students[1].spe + " "  + data.students[1].grade.average + " " + "<br>" + data.students[2].id + " " +   data.students[2].name + " " + data.students[2].lastname + " " +data.students[2].spe  + " " +  data.students[0].grade.average + " "  + data.students[1].grade.comments + " " + "<br>" + data.students[3].id + " " +  data.students[3].name + " " + data.students[3].lastname + " " +  "<br>" +data.students[4].id + " " +    data.students[4].name + " " + data.students[4].lastname + " " + data.students[4].spe; ;
+
+
+})
+ </script>
+
+
+
+<style>
+    *{
+        background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(177,85,11,1) 22%, rgba(136,114,67,1) 36%, rgba(93,145,127,1) 55%, rgba(0,212,255,1) 83%);
+        text-align: center;
+        color:white;
+    }
+    footer{
+        position: fixed;
+        bottom: 0;
+        width:100%;
+    }
+    h6{
+        border:1px solid black;
+        width:10%;
+        color:white;
+        font-weight: bold;
+    }
+</style>
+</body>
+</html>
