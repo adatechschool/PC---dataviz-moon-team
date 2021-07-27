@@ -10,5 +10,9 @@
 
 27/07/2021
 
+- création des fichiers moon-rise. html et moon-rise.js
+- to do list : https://trello.com/b/SqFf00fp/nameless
+- connection à l'API effectuée
+- comment traite-t-on les données ?
 
 
