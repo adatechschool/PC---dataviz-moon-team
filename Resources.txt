@@ -1,0 +1,31 @@
+
+
+Api ipgeolocation : 
+
+
+{
+"location": {
+"ip": 83.114.14.227
+"country_code2": FR
+"country_name": France
+"state_prov": Ile-de-France
+"district": 
+"city": Paris
+"location": -
+"latitude": 48.85717
+"longitude": 2.3414
+},
+"date": 2021-07-27
+"sunrise": 06:17
+"sunset": 21:36
+"solar_noon": 13:57
+"day_length": 15:19
+"sun_altitude": 39.87671506978231
+"sun_distance": 151946975.45110703
+"sun_azimuth": 107.9084441912197
+"moonrise": 23:45
+"moon_altitude": -5.568386044423696
+"moon_distance": 384605.4075121253
+"moon_azimuth": 261.0433698704072
+"moon_parallactic_angle": 42.08212099640092
+}
