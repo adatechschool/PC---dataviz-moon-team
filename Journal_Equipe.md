@@ -8,4 +8,10 @@
 - to do list : https://trello.com/b/SqFf00fp/nameless
 - à faire découpage des tâches
 
+27/07/2021
+
+
+
+RESSSOURCES :
+
 - https://ipgeolocation.io/astronomy-api.html
