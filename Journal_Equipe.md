@@ -2,6 +2,14 @@
 
 *Ce fichier est destiné à recevoir un récapitulatif de ce que vous avez fait pendant la journée avec votre équipe. Vous êtes libres d'organiser le bilan de vos journées comme bon vous semble (ex : fait aujourd'hui - plans pour demain - blocages)*
 
+PROJET = VISUALISER LE CYCLE DE LA LUNE
+- heure terre / heure lune API
+- earth location API
+- image de la lune qui varie en fonction de l'heure
+- différentes images en fonction du cycle de la lune
+- infos lune API
+- son ambiant : playlist ?
+
 26/07/2021
 
 - idée projet = visualisation du cycle lunaire
