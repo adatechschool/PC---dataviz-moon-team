@@ -6,6 +6,12 @@
 
 - Produire un découpage de features et créer autant  d'"issues" sur votre repo (selon la méthode vue avec Adrien en plénière)
 
+- heure locale terrienne avec location (API) - mob
+- convertir l'heure locale en heure lunaire - mob
+- API lunaire - mob
+- banque d'images lune - flora
+- info phase lunaire - camille
+
 
 ## Mode de fonctionnement 
 
