@@ -29,3 +29,7 @@ Api ipgeolocation :
 "moon_azimuth": 261.0433698704072
 "moon_parallactic_angle": 42.08212099640092
 }
+
+RESSSOURCES :
+
+- https://ipgeolocation.io/astronomy-api.html
