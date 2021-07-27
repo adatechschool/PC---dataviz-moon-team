@@ -37,3 +37,4 @@ RESSSOURCES :
 - https://fontawesome.com/v5.15/icons?d=gallery&p=2
 - https://github.com/IPGeolocation/ip-geolocation-api-javascript-sdk
 
+- Key: bc821545b212458b93d35ab006e86be3
