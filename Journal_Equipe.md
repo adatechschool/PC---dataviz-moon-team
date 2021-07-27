@@ -12,6 +12,3 @@
 
 
 
-RESSSOURCES :
-
-- https://ipgeolocation.io/astronomy-api.html
