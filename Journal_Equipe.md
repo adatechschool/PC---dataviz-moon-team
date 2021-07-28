@@ -26,7 +26,16 @@ PROJET = VISUALISER LE CYCLE DE LA LUNE
 28/07/2021
 
 - router ttes les infos api - almost done
-- -> trouver une solution heure lunaire
-- animation css
+- -> trouver une solution heure lunaire - done
+- décompte heure lune et terre
+
+A FAIRE 
+- animation css + style
+- trouver typo
+- images
+- phases lunaires
+- date lunaire
+- géolocalisation api => change l'heure, lat et long
+- son ambiant avec bouton
 
 
