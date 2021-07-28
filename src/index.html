@@ -16,8 +16,10 @@
 <!-- SCRIPT JAVASCRIPT-->
 <script type = "text/javascript">
 function fetchMoon(){
-fetch('https://api.ipgeolocation.io/astronomy?apiKey=bc821545b212458b93d35ab006e86be3&lat=-27.4748&long=153.017')
-            .then((response) => response.json())
+fetch('https://api.ipgeolocation.io/astronomy?apiKey=bc821545b212458b93d35ab006e86be3&lat=-27.4748&long=153.017'
+)
+            
+.then((response) => response.json())
             .then((data) => {
                 console.log(data);    
             })

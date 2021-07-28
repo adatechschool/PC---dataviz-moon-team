@@ -5,7 +5,9 @@ function fetchMoon(){
                     console.log(response);
                     var userData = response;
                     console.log(userData.location)
-                    document.getElementById('informations').innerHTML = response.date;   
+                    document.getElementById('earth_hour').innerHTML = response.current_time;
+                    document.getElementById('date_earth').innerHTML = response.date;
+                    document.getElementById('moon_azimuth').innerHTML = response.moon_azimuth;   
                 })
             } 
     fetchMoon();
