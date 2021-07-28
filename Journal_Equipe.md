@@ -23,4 +23,10 @@ PROJET = VISUALISER LE CYCLE DE LA LUNE
 - connection à l'API effectuée
 - comment traite-t-on les données ?
 
+28/07/2021
+
+- router ttes les infos api - almost done
+- -> trouver une solution heure lunaire
+- animation css
+
 
