@@ -34,6 +34,7 @@ A FAIRE
 - trouver typo
 - images
 - phases lunaires
+- date lunaire
 - géolocalisation api => change l'heure, lat et long
 - son ambiant avec bouton
 
