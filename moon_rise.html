@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="moon_rise_script.js"></script>
+    <script src="moon_time.js"></script>
+    <script src="earth_time.js"></script>
+
+    <title>Document</title>
+</head>
+<header>
+    
+</header>
+
+<body>
+
+    <h1>FULL MOON</h1>
+   
+    <div id="earth">
+        <h2 id="time_on_earth">EARTH</h2>
+        <h2 class="clock"></h2>
+        <h2 id="date_earth">DATE ON EARTH</h2>
+        <h2 id="earth_location">EARTH LOCATION</h2>
+        <h2 id="earth_latitude">LATITUDE</h2>
+        <h2 id="earth_longitude">LONGITUDE</h2>
+        <h3 id="solar_noon">SOLAR NOON</h3>
+        <h3 id="sun_altitude">SUN ALTITUDE</h3>
+        <h3 id="sun_azimuth">SUN AZIMUTH</h3>
+        <h3 id="sun_distance">SUN DISTANCE</h3>
+        <h3 id="sunrise">SUNRISE</h3>
+        <h3 id="sunset">SUNSET</h3>
+    </div>
+
+    <div id="moon">
+
+        <h2 id="time_on_moon">MOON</h2>
+        <h2 class="moonClock"></h2>
+        <h2 id="date_moon">DATE ON MOON</h2>
+        <h2 id="moon_location">MOON LOCATION</h2>
+        <h3 id="moon_altitude">MOON ALTITUDE</h3>
+        <h3 id="moon_azimuth">MOON AZIMUTH</h3>
+        <h3 id="moon_distance">MOON DISTANCE</h3>
+        <h3 id="moonrise">MOONRISE</h3>
+        <h3 id="moonset">MOONSET</h3>
+
+    </div>
+    
+   
+    <style>
+       /* @font-face{
+            font-family: Outward;
+             src: url('/Users/alex/Desktop/web1reco/PC---dataviz-moon-team/src/outward-master/fonts/webfonts/outward-round-webfont.woff2 ');
+        }*/
+
+        @font-face {
+    font-family: 'Outward';
+    src: url('outward-round-webfont.eot');
+    src: url('outward-round-webfont.eot?#iefix') format('embedded-opentype'),
+         url('outward-round-webfont.woff2') format('woff2'),
+         url('outward-round-webfont.woff') format('woff'),
+         url('outward-round-webfont.ttf') format('truetype'),
+         url('outward-round-webfont.svg#outwardround') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
+        h1{
+            text-align: center;
+            font-family: 'Outward';
+        }
+        #earth{
+           display:inline-block;
+           float:left;
+        }
+        #moon{
+            display:inline-block;
+            float: right;
+            text-align: end;
+            
+        }
+    </style>
+    
+
+    
+    <script>
+        window.addEventListener("moontime:updated", function(e) {
+            document.querySelector(".moonClock").innerHTML = " " + "DATE ON MOON : " + " " + moon.formatMoonString("%MS:%MM:%M"); 
+        })
+    </script>
+
+</body>
+</html>
