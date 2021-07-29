@@ -29,13 +29,21 @@ PROJET = VISUALISER LE CYCLE DE LA LUNE
 - -> trouver une solution heure lunaire - done
 - décompte heure lune et terre
 
+29/07/2021
+
+- animation css fade white to black / black to white en loop
+- mise à jour du html/js
+
+
+
 A FAIRE 
-- animation css + style
+- animation css correlé avec DATE NOW (navigateur)
 - trouver typo
 - images
 - phases lunaires
 - date lunaire
 - géolocalisation api => change l'heure, lat et long
 - son ambiant avec bouton
+- texte déroulant à propos de la lune
 
 
