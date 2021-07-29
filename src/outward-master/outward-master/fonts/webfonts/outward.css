@@ -33,29 +33,3 @@
     font-weight: normal;
     font-style: italic;
 }
-
-<<<<<<< Updated upstream
-h1 {
-    font-family: 'outward';
-    font-style: italic;
-}
-=======
-h1{
-    text-align: center;
-    font-family: 'Outward';
-    font-style: italic;
-}
-#earth{
-   display:inline-block;
-   float:left;
-}
-#moon{
-    display:inline-block;
-    float: right;
-    text-align: end;
-
-}
-
-
-
->>>>>>> Stashed changes
