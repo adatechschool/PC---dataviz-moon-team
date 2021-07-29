@@ -34,16 +34,9 @@
     font-style: italic;
 }
 
-<<<<<<< Updated upstream
-h1 {
-    font-family: 'outward';
-    font-style: italic;
-}
-=======
 h1{
     text-align: center;
-    font-family: 'Outward';
-    font-style: italic;
+    font-family: 'Archivo Black', sans-serif;    
 }
 #earth{
    display:inline-block;
@@ -56,6 +49,11 @@ h1{
 
 }
 
+body
+{
+    background-image: url("full_moon_black.jpg");
+    color : white;
+}
 
 
->>>>>>> Stashed changes
+

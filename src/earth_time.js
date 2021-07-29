@@ -10,7 +10,7 @@ function clock() {// We create a new Date object and assign it to a variable cal
         
         seconds = time.getSeconds();
     
-    document.querySelectorAll('.clock')[0].innerHTML = harold(hours) + ":" + harold(minutes) + ":" + harold(seconds);
+    document.querySelectorAll('.clock')[0].innerHTML = 'HOUR ON EARTH : ' + harold(hours) + ":" + harold(minutes) + ":" + harold(seconds);
       
       function harold(standIn) {
         if (standIn < 10) {

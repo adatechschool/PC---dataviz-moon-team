@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="moon_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
     <script src="moon_rise_script.js"></script>
     <script src="moon_time.js"></script>
     <script src="earth_time.js"></script>
@@ -49,7 +52,7 @@
 
     </div>
     
-    <div id="background_image"><img src="full_moon_black.jpg" alt=""></div>
+    
    
     
     
@@ -57,7 +60,7 @@
     
     <script>
        window.addEventListener("moontime:updated", function(e) {
-            document.querySelector(".moonClock").innerHTML = " " + "DATE ON MOON : " + " " + moon.formatMoonString("%MS:%MM:%M"); 
+            document.querySelector(".moonClock").innerHTML = " " + "HOUR ON MOON : " + " " + moon.formatMoonString("%MS:%MM:%M"); 
         })
     </script>
 

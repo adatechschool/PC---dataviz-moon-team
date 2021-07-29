@@ -27,19 +27,23 @@ function fetchMoon(){
             } 
     fetchMoon();
 
-    var backgroundImage = document.getElementById("background_image");
+    // var backgroundImage = document.getElementById("background_image");
 
-    var imageArray = ["/full_moon_black.jpg","/full_moon_white.jpg"];
+    // var imageArray = ["/full_moon_black.jpg","/full_moon_white.jpg"];
 
-    var imageIndex = 0;
+    // var imageIndex = 0;
 
-    function changeImage() {
-        backgroundImage.setAttribute('src',imageArray[imageIndex]);
-        imageIndex++;
-        if (imageIndex >= imageArray.length) {
-            imageIndex = 0;
-        }
-    }
+    // function changeImage() {
+    //     backgroundImage.setAttribute('src',imageArray[imageIndex]);
+    //     imageIndex++;
+    //     if (imageIndex >= imageArray.length) {
+    //         imageIndex = 0;
+    //     }
+    // }
 
-    setInterval(changeImage,500);
+    // setInterval(changeImage,500);
+
+    function changeImage(element) {
+        var x = element.getElementsByTagName('img').item(0);
+        var v    }
     
