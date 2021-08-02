@@ -1,52 +1,57 @@
 @font-face {
     font-family: 'Outward';
-    src: url('outward-block-webfont.eot');
-    src: url('outward-block-webfont.eot?#iefix') format('embedded-opentype'),
-         url('outward-block-webfont.woff2') format('woff2'),
-         url('outward-block-webfont.woff') format('woff'),
-         url('outward-block-webfont.ttf') format('truetype'),
-         url('outward-block-webfont.svg#outwardblock') format('svg');
+    src: url('outward-master/fonts/webfonts/outward-block-webfont.eot');
+    src: url('outward-master/fonts/webfonts/outward-block-webfont.eot?#iefix') format('embedded-opentype'),
+         url('outward-master/fonts/webfonts/outward-block-webfont.woff2') format('woff2'),
+         url('outward-master/fonts/webfonts/outward-block-webfont.woff') format('woff'),
+         url('outward-master/fonts/webfonts/outward-block-webfont.ttf') format('truetype'),
+         url('outward-master/fonts/webfonts/outward-block-webfont.svg#outwardblock') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
-@font-face {
+/* @font-face {
     font-family: 'Outward';
-    src: url('outward-borders-webfont.eot');
-    src: url('outward-borders-webfont.eot?#iefix') format('embedded-opentype'),
-         url('outward-borders-webfont.woff2') format('woff2'),
-         url('outward-borders-webfont.woff') format('woff'),
-         url('outward-borders-webfont.ttf') format('truetype'),
-         url('outward-borders-webfont.svg#outwardborders') format('svg');
+    src: url('outward-master/fonts/webfonts/outward-borders-webfont.eot');
+    src: url('outward-master/fonts/webfonts/outward-borders-webfont.eot?#iefix') format('embedded-opentype'),
+         url('outward-master/fonts/webfonts/outward-borders-webfont.woff2') format('woff2'),
+         url('outward-master/fonts/webfonts/outward-borders-webfont.woff') format('woff'),
+         url('outward-master/fonts/webfonts/outward-borders-webfont.ttf') format('truetype'),
+         url('outward-master/fonts/webfonts/outward-borders-webfont.svg#outwardborders') format('svg');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Outward';
-    src: url('outward-round-webfont.eot');
-    src: url('outward-round-webfont.eot?#iefix') format('embedded-opentype'),
-         url('outward-round-webfont.woff2') format('woff2'),
-         url('outward-round-webfont.woff') format('woff'),
-         url('outward-round-webfont.ttf') format('truetype'),
-         url('outward-round-webfont.svg#outwardround') format('svg');
+    src: url('outward-master/fonts/webfonts/outward-round-webfont.ttf');
+    src: url('outward-master/fonts/webfonts/outward-round-webfont.eot?#iefix') format('embedded-opentype'),
+         url('outward-master/fonts/webfonts/outward-round-webfont.woff2') format('woff2'),
+         url('outward-master/fonts/webfonts/outward-round-webfont.woff') format('woff'),
+         url('outward-master/fonts/webfonts/outward-round-webfont.ttf') format('truetype'),
+         url('outward-master/fonts/webfonts/outward-round-webfont.svg#outwardround') format('svg');
     font-weight: normal;
     font-style: italic;
-}
+}  */
+
 
 h1{
     text-align: center;
-    font-family: 'Archivo Black', sans-serif;    
+    font-family: 'Outward', sans-serif;
+    font-style: italic;   
+    font-weight: normal;
+    font-size: 10em;
+    
 }
 #earth{
    display:inline-block;
    float:left;
-}
+   font-family: 'Play', sans-serif;}
 #moon{
     display:inline-block;
     float: right;
     text-align: end;
-
+    font-family: 'Play', sans-serif;
 }
 
 body
