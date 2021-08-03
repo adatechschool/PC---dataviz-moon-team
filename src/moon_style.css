@@ -1,3 +1,4 @@
+
 @font-face {
     font-family: 'Outward';
     src: url('outward-master/fonts/webfonts/outward-block-webfont.eot');
@@ -10,64 +11,85 @@
     font-style: normal;
 }
 
-/* @font-face {
-    font-family: 'Outward';
-    src: url('outward-master/fonts/webfonts/outward-borders-webfont.eot');
-    src: url('outward-master/fonts/webfonts/outward-borders-webfont.eot?#iefix') format('embedded-opentype'),
-         url('outward-master/fonts/webfonts/outward-borders-webfont.woff2') format('woff2'),
-         url('outward-master/fonts/webfonts/outward-borders-webfont.woff') format('woff'),
-         url('outward-master/fonts/webfonts/outward-borders-webfont.ttf') format('truetype'),
-         url('outward-master/fonts/webfonts/outward-borders-webfont.svg#outwardborders') format('svg');
-    font-weight: bold;
-    font-style: normal;
-}
 
-@font-face {
-    font-family: 'Outward';
-    src: url('outward-master/fonts/webfonts/outward-round-webfont.ttf');
-    src: url('outward-master/fonts/webfonts/outward-round-webfont.eot?#iefix') format('embedded-opentype'),
-         url('outward-master/fonts/webfonts/outward-round-webfont.woff2') format('woff2'),
-         url('outward-master/fonts/webfonts/outward-round-webfont.woff') format('woff'),
-         url('outward-master/fonts/webfonts/outward-round-webfont.ttf') format('truetype'),
-         url('outward-master/fonts/webfonts/outward-round-webfont.svg#outwardround') format('svg');
-    font-weight: normal;
-    font-style: italic;
-}  */
 
 section {
     display: flex;
     justify-content: space-between;
 }
 
-/* #titre:nth-child(2) {
-    align-self: center;
-} */
 
 h1{
     text-align: center;
     font-family: 'Outward', sans-serif;
     font-style: italic;   
     font-weight: normal;
-    font-size: 10em;
+    font-size: 15em;
         
 }
 #earth{
    display:inline-block;
    float:left;
-   font-family: 'Play', sans-serif;}
+   font-family: 'Play', sans-serif;
+   z-index: 1000;
+
+}
 #moon{
     display:inline-block;
     float: right;
     text-align: end;
     font-family: 'Play', sans-serif;
+    z-index: 1000;
 }
 
-/* body
-{
-    background-image: url("full_moon_black.jpg");
-    color : white;
-    background-repeat: no-repeat;
+/* #son{
+   margin: 0 auto;
 } */
 
+body {
+    background-image: url("full_moon_black.jpg");
+    z-index: 1;
+    color : white;
+}
 
+#degrade
+{
+   
+    position: relative;
+    background: #fc0505; 
+    border: none;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    margin-top: -5px;
+    margin-left: -7px;
+    margin-right: 30px;
+    opacity: 0.5;
+    
+
+} 
+
+#degrade:before {
+    --size: 0;
+    content: '';
+    position: absolute;
+    left: var(--x);
+    top: var(--y);
+    width: var(--size);
+    height: var(--size);
+    background: radial-gradient(circle closest-side, rgb(14, 13, 13), transparent);
+    transform: translate(-50%, -50%);
+    transition: width 0.5s ease, height 0.5s ease;
+  }
+  
+  #degrade:hover:before {
+    --size: 1000px;
+  }
+
+  *{
+      margin-right: -2px;
+  }
 

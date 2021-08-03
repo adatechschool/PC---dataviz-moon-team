@@ -10,7 +10,6 @@ window.onload = function() {
             .then((response) => response.json())
             .then((response) => {
                 console.log(response);
-                var userData = response;
                 document.getElementById('date_earth').innerHTML = " " + "DATE ON EARTH : " + response.date;
                 document.getElementById('earth_latitude').innerHTML =  " "+ "LATITUDE : "+ response.location.latitude; 
                 document.getElementById('earth_longitude').innerHTML = " "+ "LONGITUDE : "+ response.location.longitude;   
@@ -45,9 +44,6 @@ if (navigator.geolocation) {
     console.log('Geolocation is not supported for this Browser/OS.');
 }
 
-// var valuesGeo = geoSuccess(position);
-// var valuesLong = valuesGeo.long;
-// var valuesLat = valuesGeo.lat;
     
 
  var fetchReverseGeoloc = function(longitude, latitude) {
@@ -65,13 +61,12 @@ if (navigator.geolocation) {
            
              // gestion du dégradé
 
-             $(document).mousemove(function(event) {
-                windowWidth = $(window).width();
-                windowHeight = $(window).height();
-                
-                mouseXpercentage = Math.round(event.pageX / windowWidth * 100);
-                mouseYpercentage = Math.round(event.pageY / windowHeight * 100);
-                
-                $('.radial-gradient').css('background', 'radial-gradient(at ' + mouseXpercentage + '% ' + mouseYpercentage + '%, #3498db, #9b59b6)');
-              });
-
+             let btn = document.querySelector('#degrade');
+             btn.addEventListener('mousemove', e => {
+               let rect = e.target.getBoundingClientRect();
+               let x = e.clientX - rect.left;
+               let y = e.clientY - rect.top;
+               btn.style.setProperty('--x', x + 'px');
+               btn.style.setProperty('--y', y + 'px');
+               console.log('change');
+             });

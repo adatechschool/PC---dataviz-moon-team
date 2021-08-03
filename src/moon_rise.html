@@ -8,10 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
-    <script src="moon_rise_script.js"></script>
-    <script src="moon_time.js"></script>
+      <script src="moon_time.js"></script>
     <script src="earth_time.js"></script>
-    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.js"></script>
     <link rel="shortcut icon" href="moon-96.png" type="image/x-icon">
     <link rel="stylesheet" href="moon_style.css" />
 
@@ -19,6 +17,8 @@
 </head>
 
 <body>
+    <div class="black">
+    <div id="degrade">
 
     <div id="titre">
         <h1>FULL MOON</h1>
@@ -56,38 +56,28 @@
 
     </div>
 
-    <!-- <img id=my-img src=http://dummyimage.com/100x100/000/fff onmouseover=passageDeLaSouris(this); onmouseout=departDeLaSouris(this); /> -->
-    
-    <div class="radial-gradient"></div>
+ 
 
     
 </section>
-    
-    
 
+<div align="center"> 
+        <audio controls loop>
+        <source src="musique.mp3" type="audio/mpeg">
+      </audio>
+  </div>
     
+   
+</div>
+</div>   
     <script>
        window.addEventListener("moontime:updated", function(e) {
             document.querySelector(".moonClock").innerHTML = " " + "HOUR ON MOON : " + " " + moon.formatMoonString("%MS:%MM:%M"); 
         })
-// //coordonnées de l'écran
-// var x = MouseEvent.screenX;
-// var y = MouseEvent.screenY;
-// console.log("x = " + x);
-// console.log("y + " + y);
 
-//         //Affecte la nouvelle image lorsque la souris survole l'élément
-// function passageDeLaSouris(element) {
-//     if (x <= )
-// element.setAttribute('src', 'http://dummyimage.com/100x100/eb00eb/fff');
-// }
-// //Affecte l'image de départ lorsque la souris ne survole plus l'élément
-// function departDeLaSouris(element) {
-// element.setAttribute('src', 'http://dummyimage.com/100x100/000/fff');
-// }
 
 
     </script>
-
+  <script src="moon_rise_script.js"></script>
 </body>
 </html>
