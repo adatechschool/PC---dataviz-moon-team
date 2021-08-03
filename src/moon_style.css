@@ -41,7 +41,7 @@ h1{
     font-style: italic;   
     font-weight: normal;
     font-size: 10em;
-    
+        
 }
 #earth{
    display:inline-block;
@@ -58,6 +58,7 @@ body
 {
     background-image: url("full_moon_black.jpg");
     color : white;
+    background-repeat: no-repeat;
 }
 
 

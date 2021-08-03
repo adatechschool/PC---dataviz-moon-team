@@ -27,10 +27,12 @@ window.onload = function() {
                 document.getElementById('sunset').innerHTML = " " + "SUNSET : " + response.sunset;
         })
     }
-
+    
     var geoSuccess = function(position) {
         startPos = position;
         fetchMoon(startPos.coords.latitude, startPos.coords.longitude);
+        console.log("2 " + startPos.coords.latitude, startPos.coords.longitude);
+        fetchReverseGeoloc(startPos.coords.longitude , startPos.coords.latitude);   
     };
 
     navigator.geolocation.getCurrentPosition(geoSuccess);
@@ -38,11 +40,28 @@ window.onload = function() {
 
 if (navigator.geolocation) {
     console.log('Geolocation is supported!');
+    
 } else {
     console.log('Geolocation is not supported for this Browser/OS.');
 }
 
-
+// var valuesGeo = geoSuccess(position);
+// var valuesLong = valuesGeo.long;
+// var valuesLat = valuesGeo.lat;
     
 
-    
+ var fetchReverseGeoloc = function(longitude, latitude) {
+          let url =  "https://api.opencagedata.com/geocode/v1/json?q=" + latitude + "+" + longitude + "&key=60615941f35440d0a11fd071b32532a0"
+          fetch(url, {method:'GET'},{ mode : 'no-cors'})
+            .then((response) => response.json())
+            .then((response) => {
+                console.log(response);
+                document.getElementById('earth_location').innerHTML = " " + "LOCATION : " + response.results[0].formatted;
+
+
+            })
+            }  
+            
+           
+             // paramètres à récupérer de la 2e requête 
+
