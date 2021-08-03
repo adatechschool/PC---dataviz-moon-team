@@ -34,16 +34,23 @@ PROJET = VISUALISER LE CYCLE DE LA LUNE
 - animation css fade white to black / black to white en loop
 - mise à jour du html/js
 
+03/08/2021
+- css flexbox
+- fav icone
+- click pour texte lune
+- son lune
+- animation css
 
 
 A FAIRE 
 - animation css correlé avec DATE NOW (navigateur)
-- trouver typo
+- trouver typo _ ok
 - images
 - phases lunaires
 - date lunaire
-- géolocalisation api => change l'heure, lat et long
+- géolocalisation api => change l'heure, lat et long _ ok
 - son ambiant avec bouton
 - texte déroulant à propos de la lune
+
 
 
