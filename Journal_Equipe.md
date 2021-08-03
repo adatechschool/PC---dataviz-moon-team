@@ -35,21 +35,21 @@ PROJET = VISUALISER LE CYCLE DE LA LUNE
 - mise à jour du html/js
 
 03/08/2021
-- css flexbox
-- fav icone
+- css flexbox - ok
+- fav icone - ok
 - click pour texte lune
-- son lune
-- animation css
+- son lune - ok
+- animation css - ok
 
 
 A FAIRE 
-- animation css correlé avec DATE NOW (navigateur)
+- animation css correlé avec DATE NOW (navigateur) -> event listener = dégradé qui suit la souris
 - trouver typo _ ok
 - images
 - phases lunaires
 - date lunaire
 - géolocalisation api => change l'heure, lat et long _ ok
-- son ambiant avec bouton
+- son ambiant avec bouton - ok
 - texte déroulant à propos de la lune
 
 
