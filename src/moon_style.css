@@ -34,6 +34,14 @@
     font-style: italic;
 }  */
 
+section {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* #titre:nth-child(2) {
+    align-self: center;
+} */
 
 h1{
     text-align: center;
@@ -54,12 +62,12 @@ h1{
     font-family: 'Play', sans-serif;
 }
 
-body
+/* body
 {
     background-image: url("full_moon_black.jpg");
     color : white;
     background-repeat: no-repeat;
-}
+} */
 
 
 
