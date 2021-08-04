@@ -41,16 +41,21 @@ PROJET = VISUALISER LE CYCLE DE LA LUNE
 - son lune - ok
 - animation css - ok
 
+04/08/2021
+- texte déroulant à propos de la lune - ok
+
+
 
 A FAIRE 
 - animation css correlé avec DATE NOW (navigateur) -> event listener = dégradé qui suit la souris
 - trouver typo _ ok
 - images
-- phases lunaires
-- date lunaire
+- phases lunaires -> pour + tard
+- date lunaire -> pour + tard
 - géolocalisation api => change l'heure, lat et long _ ok
 - son ambiant avec bouton - ok
-- texte déroulant à propos de la lune
+- 1er plans et sd plans non gérés ??
+
 
 
 
