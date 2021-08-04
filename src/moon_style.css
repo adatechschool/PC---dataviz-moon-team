@@ -53,9 +53,11 @@ h1 {
 
 body {
     position: relative;
-    background-image: url("full_moon_black.jpg");
-    z-index: -1;
-    background-color: black;
+    /* background-image: url("full_moon_black.jpg"); */
+    animation-name: changingImage, changingBackground;
+    animation-duration: 59s;
+    animation-iteration-count: infinite;
+    /* background-color: black; */
     background-repeat: no-repeat;
     margin: 0;
 }
@@ -105,6 +107,31 @@ body {
   p {
       font-style: italic;
   }
+
+  /* *{
+    animation-name: changingImage;
+    animation-duration: 59s;
+    animation-iteration-count: infinite;
+    } */
+    
+@keyframes changingImage{
+    
+    from{ background-image: url("full_moon_black.jpg");}
+
+    50% { background-image: url("full_moon_white.jpg");}
+  
+    to { background-image: url("full_moon_black.jpg");}
+      
+     
+}
+
+@keyframes changingBackground {
+    from{ background-color: black;}
+
+    50% { background-color: white;}
+
+    to { background-color: black;}
+}
 
 
   
