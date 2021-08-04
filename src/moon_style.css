@@ -19,36 +19,42 @@ section {
 }
 
 
-h1{
+h1 {
+    position: relative;
     text-align: center;
     font-family: 'Outward', sans-serif;
     font-style: italic;   
     font-weight: normal;
     font-size: 15em;
-        
+    color: cornsilk;
+    z-index: 1000;
+    opacity: 1;      
 }
-#earth{
+
+#earth {
+   position: relative;
    display:inline-block;
    float:left;
    font-family: 'Play', sans-serif;
    z-index: 1000;
-
+   color: cornsilk;
 }
-#moon{
+
+#moon {
+    position: relative;
     display:inline-block;
     float: right;
     text-align: end;
     font-family: 'Play', sans-serif;
     z-index: 1000;
+    color: cornsilk;
 }
 
-/* #son{
-   margin: 0 auto;
-} */
 
 body {
+    position: relative;
     background-image: url("full_moon_black.jpg");
-    z-index: 1;
+    z-index: -1;
     background-color: black;
     background-repeat: no-repeat;
     margin: 0;
@@ -56,9 +62,7 @@ body {
 
 #degrade
 {
-   
     position: relative;
-    background: #fc0505; 
     border: none;
     color: white;
     cursor: pointer;
@@ -69,9 +73,9 @@ body {
     opacity: 0.5;
     margin: 0;
     padding: 0;
-    
-
+    z-index: 1;
 } 
+
 
 #degrade:before {
     --size: 0;
@@ -81,13 +85,25 @@ body {
     top: var(--y);
     width: var(--size);
     height: var(--size);
-    background: radial-gradient(circle closest-side, rgb(14, 13, 13), transparent);
+    background: radial-gradient(circle closest-side, rgb(245, 241, 241), transparent);
     transform: translate(-50%, -50%);
     transition: width 0.5s ease, height 0.5s ease;
+    z-index: 1;
   }
   
   #degrade:hover:before {
     --size: 1000px;
+      }
+
+  button {
+      color: white;
+      border: 1px solid black;
+      background-color: transparent;
+                
+  }
+
+  p {
+      font-style: italic;
   }
 
 

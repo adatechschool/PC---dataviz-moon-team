@@ -70,3 +70,45 @@ if (navigator.geolocation) {
                btn.style.setProperty('--y', y + 'px');
                console.log('change');
              });
+
+             // heure lunaire lié html
+
+             window.addEventListener("moontime:updated", function(e) {
+                document.querySelector(".moonClock").innerHTML = " " + "HOUR ON MOON : " + " " + moon.formatMoonString("%MS:%MM:%M"); 
+            })
+
+            // bouton texte lune
+
+                     
+              function randomPoetry () {
+                const moonPoetry = [ 
+                    `"De deux choses lune, l'autre c'est le soleil."<br>Jacques Prévert`,
+                    `"La lune est le rêve du soleil."<br>Paul Klee`,
+                    `"L'amitié n'est pas un soleil, c'est une jolie lune qui éclaire surtout le soir de la vie."<br>Anne Barratin`,
+                    `"Quand la lune est pleine, elle commence à décliner."<br>Proverbe japonais"`,
+                    `"La multitude des étoiles soutient la lune."<br>Proverbe chinois"`,
+                    `"La lune bouge doucement mais elle traverse la ville.<br>Proverbe ashanti"`,
+                    `"We all shine on...like the moon and the stars and the sun...we all shine on...come on and on and on..."<br>John Lennon`,
+                    `"Yours is the light by which my spirit’s born : - you are my sun, my moon, and all my stars."<br>E.E. Cummings`,
+                    `Do not swear by the moon, for she changes constantly. then your love would also change."<br>William Shakespeare`];
+                var moonPoetryRandom = 0;
+                for (moonPoetryRandom; moonPoetryRandom < moonPoetry.length; moonPoetryRandom++) {
+                    moonPoetryRandom = moonPoetry[Math.floor(Math.random() * moonPoetry.length)];
+                    console.log(moonPoetryRandom);
+                    document.getElementById("texte_lune").innerHTML = moonPoetryRandom;
+                }
+                   
+              }
+            
+
+            //   `"De deux choses lune, l'autre c'est le soleil."<br>Jacques Prévert`,
+            //   `"La lune est le rêve du soleil."<br>Paul Klee`,
+            //   `"L'amitié n'est pas un soleil, c'est une jolie lune qui éclaire surtout le soir de la vie."<br>Anne Barratin`,
+            //   `"Quand la lune est pleine, elle commence à décliner."<br>Proverbe japonais"`,
+            //   `"La multitude des étoiles soutient la lune."<br>Proverbe chinois"`,
+            //   `"La lune bouge doucement mais elle traverse la ville.<br>Proverbe ashanti"`,
+            //   `"We all shine on...like the moon and the stars and the sun...we all shine on...come on and on and on..."<br>John Lennon`,
+            //   `"Yours is the light by which my spirit’s born : - you are my sun, my moon, and all my stars."<br>E.E. Cummings`,
+            //   `Do not swear by the moon, for she changes constantly. then your love would also change."<br> William Shakespeare`,
+
+          
