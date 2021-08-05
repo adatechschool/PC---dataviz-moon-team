@@ -1,8 +1,9 @@
-
     
-    
-window.onload = function() {
+    // Start la géolocalisation au démarrage de la page
+    window.onload = function() {
     var startPos;
+
+    // Info de la lune et du soleil
 
     var fetchMoon = function(latitude, longitude) {
         let url = 'https://api.ipgeolocation.io/astronomy?apiKey=bc821545b212458b93d35ab006e86be3&lat=' + latitude + '&long=' + longitude;
@@ -26,7 +27,7 @@ window.onload = function() {
                 document.getElementById('sunset').innerHTML = " " + "SUNSET : " + response.sunset;
         })
     }
-    
+    // Géolocalisation
     var geoSuccess = function(position) {
         startPos = position;
         fetchMoon(startPos.coords.latitude, startPos.coords.longitude);
@@ -45,7 +46,6 @@ if (navigator.geolocation) {
 }
 
     
-
  var fetchReverseGeoloc = function(longitude, latitude) {
           let url =  "https://api.opencagedata.com/geocode/v1/json?q=" + latitude + "+" + longitude + "&key=60615941f35440d0a11fd071b32532a0"
           fetch(url, {method:'GET'},{ mode : 'no-cors'})
@@ -79,7 +79,6 @@ if (navigator.geolocation) {
 
             // bouton texte lune
 
-                     
               function randomPoetry () {
                 const moonPoetry = [ 
                     `"De deux choses lune, l'autre c'est le soleil."<br>Jacques Prévert`,
@@ -99,16 +98,6 @@ if (navigator.geolocation) {
                 }
                    
               }
-            
-
-            //   `"De deux choses lune, l'autre c'est le soleil."<br>Jacques Prévert`,
-            //   `"La lune est le rêve du soleil."<br>Paul Klee`,
-            //   `"L'amitié n'est pas un soleil, c'est une jolie lune qui éclaire surtout le soir de la vie."<br>Anne Barratin`,
-            //   `"Quand la lune est pleine, elle commence à décliner."<br>Proverbe japonais"`,
-            //   `"La multitude des étoiles soutient la lune."<br>Proverbe chinois"`,
-            //   `"La lune bouge doucement mais elle traverse la ville.<br>Proverbe ashanti"`,
-            //   `"We all shine on...like the moon and the stars and the sun...we all shine on...come on and on and on..."<br>John Lennon`,
-            //   `"Yours is the light by which my spirit’s born : - you are my sun, my moon, and all my stars."<br>E.E. Cummings`,
-            //   `Do not swear by the moon, for she changes constantly. then your love would also change."<br> William Shakespeare`,
+ 
 
           
