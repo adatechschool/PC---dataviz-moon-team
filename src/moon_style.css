@@ -26,9 +26,17 @@ h1 {
     font-style: italic;   
     font-weight: normal;
     font-size: 15em;
-    color: cornsilk;
     z-index: 1000;
-    opacity: 1;      
+    opacity: 1; 
+    animation-name: changingTextColor;
+    animation-duration: 59s;  
+    animation-iteration-count: infinite;   
+}
+
+@keyframes changingTextColor {
+    from { color : white;}
+    50% { color : black;}
+    to { color : white;}
 }
 
 #earth {
@@ -37,7 +45,8 @@ h1 {
    float:left;
    font-family: 'Play', sans-serif;
    z-index: 1000;
-   color: cornsilk;
+   color: rgb(255, 255, 253);
+   text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
 }
 
 #moon {
@@ -47,7 +56,8 @@ h1 {
     text-align: end;
     font-family: 'Play', sans-serif;
     z-index: 1000;
-    color: cornsilk;
+    color: rgb(255, 255, 250);
+    text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
 }
 
 
@@ -61,6 +71,28 @@ body {
     background-repeat: no-repeat;
     margin: 0;
 }
+
+@keyframes changingImage{
+    
+    from{ background-image: url("full_moon_black.jpg");}
+
+    50% { background-image: url("full_moon_white.jpg");}
+  
+    to { background-image: url("full_moon_black.jpg");}
+      
+     
+}
+
+
+@keyframes changingBackground {
+    from{ background-color: black;}
+
+    50% { background-color: white;}
+
+    to { background-color: black;}
+}
+
+
 
 #degrade
 {
@@ -99,13 +131,17 @@ body {
 
   button {
       color: white;
-      border: 1px solid black;
+      text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
+      border: 1px solid rgb(12, 12, 12);
       background-color: transparent;
+      font-size: 1em;
+      
                 
   }
 
   p {
       font-style: italic;
+      font-size: 1em;
   }
 
   /* *{
@@ -114,24 +150,6 @@ body {
     animation-iteration-count: infinite;
     } */
     
-@keyframes changingImage{
-    
-    from{ background-image: url("full_moon_black.jpg");}
-
-    50% { background-image: url("full_moon_white.jpg");}
-  
-    to { background-image: url("full_moon_black.jpg");}
-      
-     
-}
-
-@keyframes changingBackground {
-    from{ background-color: black;}
-
-    50% { background-color: white;}
-
-    to { background-color: black;}
-}
 
 
   
