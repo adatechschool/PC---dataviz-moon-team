@@ -4,74 +4,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="moon_rise_script.js"></script>
-    <script src="moon_time.js"></script>
+    <link rel="stylesheet" href="moon_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
+      <script src="moon_time.js"></script>
     <script src="earth_time.js"></script>
+    <link rel="shortcut icon" href="moon-96.png" type="image/x-icon">
+    <link rel="stylesheet" href="moon_style.css" />
 
-    <title>Document</title>
+    <title>Moon</title>
 </head>
-<header>
-    
-</header>
 
 <body>
+    
+    <div id="degrade">
 
-    <h1>MOON PHASE / TITRE</h1>
-   
-    <div id="earth">
-        <h2 id="time_on_earth">TIME ON EARTH</h2>
-        <h2 class="clock"></h2>
-        <p>DATE ON EARTH</p>
-        <h2 id="date_earth">DATE ON EARTH</h2>
-        <h2 id="earth_location">PARIS UTC + 01:00</h2>
-        <p>LATITUDE</p>
-        <h2 id="earth_latitude">LATITUDE</h2>
-        <p>LONGITUDE</p>
-        <h2 id="earth_longitude">LONGITUDE</h2>
-        <p>SOLAR NOON</p>
-        <h3 id="solar_noon">SOLAR NOON</h3>
-        <p>SUN ALTITUDE</p>
-        <h3 id="sun_altitude">SUN ALTITUDE</h3>
-        <p>SUN AZIMUTH</p>
-        <h3 id="sun_azimuth">SUN AZIMUTH</h3>
-        <p>SUN DISTANCE</p>
-        <h3 id="sun_distance">SUN DISTANCE</h3>
-        <p>SUNRISE</p>
-        <h3 id="sunrise">SUNRISE</h3>
-        <p>SUNSET</p>
-        <h3 id="sunset">SUNSET</h3>
+        <div id="titre">
+            <h1>FULL MOON</h1>
+        </div>
+
+        <section>
+    
+            <div id="earth">
+                <h2 id="time_on_earth">EARTH</h2>
+                <h2 class="clock"></h2>
+                <h2 id="date_earth">DATE ON EARTH</h2>
+                <h2 id="earth_location">LOCATION</h2>
+                <h2 id="earth_latitude">LATITUDE</h2>
+                <h2 id="earth_longitude">LONGITUDE</h2>
+                <h3 id="solar_noon">SOLAR NOON</h3>
+                <h3 id="sun_altitude">SUN ALTITUDE</h3>
+                <h3 id="sun_azimuth">SUN AZIMUTH</h3>
+                <h3 id="sun_distance">SUN DISTANCE</h3>
+                <h3 id="sunrise">SUNRISE</h3>
+                <h3 id="sunset">SUNSET</h3>
+            </div>
+
+    
+            <div id="moon">
+                <h2 id="time_on_moon">MOON</h2>
+                <h2 class="moonClock"></h2>
+                <h3 id="moon_altitude">MOON ALTITUDE</h3>
+                <h3 id="moon_azimuth">MOON AZIMUTH</h3>
+                <h3 id="moon_distance">MOON DISTANCE</h3>
+                <h3 id="moonrise">MOONRISE</h3>
+                <h3 id="moonset">MOONSET</h3>
+                <h3 id="poetry"></h3>
+
+                <button  onclick="randomPoetry()">MOON POETRY</button>
+                <p id="texte_lune" ></p>
+                
+            </div>
+
+        </section>
+
+        <div align="center"> 
+            <audio src="musique.mp3" controls loop ></audio>
+        </div>
+
     </div>
-
-    <div id="moon">
-
-        <h2 id="time_on_moon">MOON TIME</h2>
-        <h2 class="moonClock"></h2>
-        <p>DATE ON MOON</p>  
-        <h2 id="date_moon">DATE ON MOON</h2>
-        <h2 id="moon_location">MOON LOCATION</h2>
-        <p>MOON ALTITUDE</p>
-        <h3 id="moon_altitude">MOON ALTITUDE</h3>
-        <p>MOON AZIMUTH</p>
-        <h3 id="moon_azimuth">MOON AZIMUTH</h3>
-        <p>MOON DISTANCE</p>
-        <h3 id="moon_distance">MOON DISTANCE</h3>
-        <p>MOONRISE</p>
-        <h3 id="moonrise">MOONRISE</h3>
-        <p>MOONSET</p>
-        <h3 id="moonset">MOONSET</h3>
-
-    </div>
-    
-   
-    
-    
-
-    
-    <script>
-        window.addEventListener("moontime:updated", function(e) {
-            document.querySelector(".moonClock").innerHTML = moon.formatMoonString("%MS:%MM:%M")
-        })
-    </script>
-
+  
+  <script src="moon_rise_script.js"></script>
 </body>
 </html>

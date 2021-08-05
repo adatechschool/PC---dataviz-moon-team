@@ -1,4 +1,3 @@
-
 let moon = {
     _initialMoon: undefined,
     _initialT: undefined,
